@@ -70,8 +70,8 @@ and explain why. That is the one thing that changes the order.
 
 ## Contact
 
-- Security reports: open a private security advisory on the affected repository, or
-  write to security@kubexa.tech if the issue is not tied to one repository.
+- Security reports: open a private security advisory on the affected repository.
 - Everything else: an issue on the repository in question reaches us faster than email.
-- Email, when an issue is not the right place: hello@kubexa.tech.
+- Email: info@kubexa.tech, the same address the website publishes.
+- Hiring: careers@kubexa.tech.
 - The website and the platform documentation live at https://kubexa.tech.
