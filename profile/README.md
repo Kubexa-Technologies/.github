@@ -1,80 +1,78 @@
 # Kubexa Technologies
 
-Open-source Kubernetes tools for the agent era, built toward a software forge that runs itself.
+<p align="center">
+  <img alt="Focus: Kubernetes tools" src="https://img.shields.io/badge/focus-kubernetes%20tools-326ce5.svg">
+  <img alt="License: open source" src="https://img.shields.io/badge/license-open%20source-blue.svg">
+  <img alt="Status: early work" src="https://img.shields.io/badge/status-early%20work-orange.svg">
+  <img alt="Work: unpaid" src="https://img.shields.io/badge/work-unpaid-lightgrey.svg">
+</p>
 
-## What we build
+We write open-source tools for Kubernetes, for the time when software agents do much of the work.
 
-Kubexa Technologies writes open-source tools for Kubernetes. The tools solve problems that
-appear when software agents do the work. They let an agent act on a cluster without holding
-long-lived credentials, and they report what they did in a way a person can check.
+An agent is a program that acts on its own. The tools here let an agent act on a cluster without a
+long-lived credential, and they show a person what the agent did. You can read the code, run it, and
+change it. Every repository here is open source.
 
-This organisation is the home for a family of tools, not for one product.
+## What lives here
 
-- `hydradb-operator` - the operator for HydraDB on Kubernetes. It is the first one
-  published here, and it runs our own cluster.
-- A second operator is in design. It does not have a public repository yet. When it
-  does, it will be listed here next to the first one.
+This organization holds a family of tools, not one product.
 
-Everything we publish is open source. You can read the code, run it, and change it.
+- `hydradb-operator`: an operator for HydraDB on Kubernetes. An operator is a program that keeps
+  cluster objects in the state you declare. This one runs our own cluster. It is early work, and its
+  README says so.
+- A second operator is in design. It has no public repository yet. When it has one, we list it here.
 
-## Where we are going
+## Where this goes
 
-A software forge takes an idea and returns running software. Most of that path still needs a
-person at the controls: reviews, releases, deploys, and the small repairs after them. We want
-that path to run itself, with people setting direction and checking results. Every tool we
-publish is a piece of that path.
-
-## Working in the open
-
-Each repository explains what it does and how to run it. Where a page here claims that
-something works, the claim came from a measurement, not from a plan.
+A software forge takes an idea and returns running software. Most of that path still needs a person
+at the controls: review, release, deploy, and the small repairs after them. We want the path to run
+itself, with people setting direction and reading results. Each tool here is one part of that path.
 
 ## What we run, in public
 
-A lot of companies write as if they invented a whole stack. Many of them do not say
-what runs under the hood, which parts they built, and which parts they borrowed. A
-reader cannot check the claim.
+Many companies write as if they built a whole stack. Few of them say what runs under the hood, which
+parts they wrote, and which parts they borrowed. A reader cannot make sure that the claim is true.
 
-We take the other path. Our stack is written down in public, at
-[kubexa.tech](https://kubexa.tech): the hardware, the network, the storage, the
-controllers, and the versions. The documentation comes from the repository that
-builds the cluster, so a page cannot drift from what runs. Where a device or a service
-needs a credential, the documentation names the path and the shape of the secret, not
-its value.
+We take the other path. We write down our stack at [kubexa.tech](https://kubexa.tech): the hardware,
+the network, the storage, the controllers, and the versions. The pages come from the repository that
+builds the cluster, so a page cannot drift from what runs. If a device or a service needs a
+credential, a page names the path and the shape of the secret, not its value.
 
-We also give back. Tools we build for our own cluster go upstream as open source,
-including the operator in this organisation, and we report what we find in the
-projects we depend on. If a piece of this platform helps someone else, it should not
-sit in a private repository.
+We also give back. A tool that we build for our own cluster goes upstream as open source, and we
+report what we find in the projects that we depend on. If a part of this platform helps you, it must
+not stay in a private repository.
 
 ## Everything through git, and safely
 
-We change our platform by changing a repository. A commit lands after review, a
-controller applies it, and the cluster converges. Nobody edits a live system by hand,
-so the repository is the record of what runs and why.
+We change our platform by changing a repository. A change lands after review, a controller applies
+it, and the cluster converges. A controller is a program that watches resources and acts on them. No
+person edits a live system by hand, so the repository is the record of what runs and why.
 
-Security follows the same rule. A secret never sits in a repository, in an image or in
-a build log. Secrets live in a vault, an operator copies them into the workloads that
-need them, and a manifest refers to them by name. Where a pipeline needs a credential,
-it asks for a short-lived token instead of holding a long-lived one.
+Security follows the same rule. A secret never sits in a repository, in an image, or in a build log.
+Secrets live in a vault. An operator copies a secret into the workload that needs it, and a manifest
+refers to the secret by name. If a pipeline needs a credential, it asks for a short-lived token
+instead of holding a long-lived one.
 
 ## Contributing
 
-Contributions are welcome, and so are issues. A bug report, a question or a pull request all
-help, and none of them needs permission first.
+You can send a bug report, a question, or a pull request. You do not need permission first.
 
-One honest limit. This work continues next to other projects, so there is no promised timeline
-for a review or a merge. Issues and pull requests are read, but they can wait longer than they
-would in a project with paid maintainers. If something is urgent for you, say so in the issue
-and explain why. That is the one thing that changes the order.
+- If you found a bug, open an issue. Say what you ran, what you expected, and what happened.
+- If you want a change, open an issue first. We can agree on the shape before you write code.
+- If you send a patch, keep it small. Add the test that would have caught the bug.
+
+There is one limit that we state plainly. This work continues next to other projects. We cannot
+promise a date for a review or a merge. We read issues and pull requests. They can wait longer than
+they would in a project with paid maintainers. If your problem is urgent, say so in the issue and
+explain why. That is the one thing that changes the order.
 
 ## Contact
 
-- Security reports: open a private security advisory on the affected repository.
-- Everything else: an issue on the repository in question reaches us faster than email.
-- Email: info@kubexa.tech, the same address the website publishes.
-- Collaboration is invite-only, and there is nothing to apply for: no job openings, no paid
-  positions, no recruitment process. If you want to join anyway, write to info@kubexa.tech and
-  say what you would like to work on. This is unpaid work on an idea, done by people who asked
-  to join.
-- The website and the platform documentation live at https://kubexa.tech.
+- To report a vulnerability, open a private security advisory on the repository. If the report
+  covers more than one repository, write to info@kubexa.tech.
+- For anything else, an issue on the repository reaches us faster than email.
+- Email: info@kubexa.tech. This is the address that the website publishes.
+- Work here is invite-only, and there is nothing to apply for. We have no job openings, no paid
+  positions, and no recruitment process. If you want to join, write to info@kubexa.tech and say what
+  you would like to work on. Nobody is paid. People here work on an idea because they asked to join.
+- Our stack documentation is at https://kubexa.tech.
