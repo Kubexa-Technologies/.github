@@ -40,6 +40,17 @@ including the operator in this organisation, and we report what we find in the
 projects we depend on. If a piece of this platform helps someone else, it should not
 sit in a private repository.
 
+## Everything through git, and safely
+
+We change our platform by changing a repository. A commit lands after review, a
+controller applies it, and the cluster converges. Nobody edits a live system by hand,
+so the repository is the record of what runs and why.
+
+Security follows the same rule. A secret never sits in a repository, in an image or in
+a build log. Secrets live in a vault, an operator copies them into the workloads that
+need them, and a manifest refers to them by name. Where a pipeline needs a credential,
+it asks for a short-lived token instead of holding a long-lived one.
+
 ## Contributing
 
 Contributions are welcome, and so are issues. A bug report, a question or a pull request all
