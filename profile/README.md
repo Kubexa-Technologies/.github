@@ -22,6 +22,24 @@ publish is a piece of that path.
 Each repository explains what it does and how to run it. Where a page here claims that
 something works, the claim came from a measurement, not from a plan.
 
+## What we run, in public
+
+A lot of companies write as if they invented a whole stack. Many of them do not say
+what runs under the hood, which parts they built, and which parts they borrowed. A
+reader cannot check the claim.
+
+We take the other path. Our stack is written down in public, at
+[kubexa.tech](https://kubexa.tech): the hardware, the network, the storage, the
+controllers, and the versions. The documentation comes from the repository that
+builds the cluster, so a page cannot drift from what runs. Where a device or a service
+needs a credential, the documentation names the path and the shape of the secret, not
+its value.
+
+We also give back. Tools we build for our own cluster go upstream as open source,
+including the operator in this organisation, and we report what we find in the
+projects we depend on. If a piece of this platform helps someone else, it should not
+sit in a private repository.
+
 ## Contributing
 
 Contributions are welcome, and so are issues. A bug report, a question or a pull request all
