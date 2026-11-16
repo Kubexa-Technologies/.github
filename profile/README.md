@@ -73,5 +73,6 @@ and explain why. That is the one thing that changes the order.
 - Security reports: open a private security advisory on the affected repository.
 - Everything else: an issue on the repository in question reaches us faster than email.
 - Email: info@kubexa.tech, the same address the website publishes.
-- Hiring: careers@kubexa.tech.
+- Collaboration is invite-only. There are no job openings, no paid positions, and no
+  recruitment process: this is unpaid work on an idea, done by people who asked to join.
 - The website and the platform documentation live at https://kubexa.tech.
