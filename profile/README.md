@@ -8,6 +8,13 @@ Kubexa Technologies writes open-source tools for Kubernetes. The tools solve pro
 appear when software agents do the work. They let an agent act on a cluster without holding
 long-lived credentials, and they report what they did in a way a person can check.
 
+This organisation is the home for a family of tools, not for one product.
+
+- `hydradb-operator` - the operator for HydraDB on Kubernetes. It is the first one
+  published here, and it runs our own cluster.
+- A second operator is in design. It does not have a public repository yet. When it
+  does, it will be listed here next to the first one.
+
 Everything we publish is open source. You can read the code, run it, and change it.
 
 ## Where we are going
@@ -63,5 +70,8 @@ and explain why. That is the one thing that changes the order.
 
 ## Contact
 
-- Security reports: open a private security advisory on the affected repository.
+- Security reports: open a private security advisory on the affected repository, or
+  write to security@kubexa.tech if the issue is not tied to one repository.
 - Everything else: an issue on the repository in question reaches us faster than email.
+- Email, when an issue is not the right place: hello@kubexa.tech.
+- The website and the platform documentation live at https://kubexa.tech.
