@@ -68,11 +68,11 @@ explain why. That is the one thing that changes the order.
 
 ## Contact
 
-- To report a vulnerability, open a private security advisory on the repository. If the report
-  covers more than one repository, write to info@kubexa.tech.
+- To report a vulnerability, open a private security advisory on the repository, or write to
+  security@kubexa.tech.
 - For anything else, an issue on the repository reaches us faster than email.
-- Email: info@kubexa.tech. This is the address that the website publishes.
+- Email: hello@kubexa.tech.
 - Work here is invite-only, and there is nothing to apply for. We have no job openings, no paid
-  positions, and no recruitment process. If you want to join, write to info@kubexa.tech and say what
+  positions, and no recruitment process. If you want to join, write to hello@kubexa.tech and say what
   you would like to work on. Nobody is paid. People here work on an idea because they asked to join.
 - Our stack documentation is at https://kubexa.tech.
